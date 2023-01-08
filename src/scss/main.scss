@@ -139,28 +139,57 @@
     background-color: wheat;
     width: 20vw;
     height: 6vh;
-    text-align: end;
+    display: flex;
+    align-items: center;
+    justify-content: end;
 }
 
-.studies{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bolder;
+.education-contain{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-left: 16%;
+    margin-top: 3.5%;
+}
+
+.article-title{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    font-weight: bolder;
     font-size: 24px;
-    margin-top: 60px;
-    margin-left: 180px;
+}
+
+.article-container{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-top: 40px;
+    margin-left: -40px;
+}
+
+.article-date{
+    text-align: end;
 }
 
 .date{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-    margin-top: 60px;
-    margin-left: 20%;
+    font-size: 15px;
 }
 
 .school-name{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-    margin-top: 20px;
-    margin-left: 20%;
+    font-size: 15px;
     color: rgb(158, 158, 158);
+    margin-top: 15px;
 }
+
+.studies-name{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.description{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
