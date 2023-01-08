@@ -7,6 +7,10 @@
     height: 100vh;
 }
 
+.about-me{
+    background-color: blue;
+}
+
 .menu{
     font-size: 18px;
     background-color: white;
@@ -115,4 +119,48 @@
     background-color:  rgb(235, 177, 68);
     padding: 15px;
     color: white;
+}
+
+
+
+
+.studies-container{
+    margin-top: 226%;
+    width: 99vw;
+    height: 100vh;
+}
+
+.education{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: 28px;
+    margin-top: 60px;
+    padding-right: 28px;
+    background-color: wheat;
+    width: 20vw;
+    height: 6vh;
+    text-align: end;
+}
+
+.studies{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: 24px;
+    margin-top: 60px;
+    margin-left: 180px;
+}
+
+.date{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    margin-top: 60px;
+    margin-left: 20%;
+}
+
+.school-name{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 20%;
+    color: rgb(158, 158, 158);
 }
