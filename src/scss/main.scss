@@ -32,6 +32,7 @@
 
 .option{
     padding: 20px;
+    cursor: pointer;
 }
 
 .option:hover{
@@ -43,8 +44,15 @@
     display: flex;
 }
 
-.profile-image{
+.container-image{
+    width: 36vw;
     height: 60vh;
+}
+
+.profile-image{
+    object-fit: cover;
+    width: 36vw;
+    height: 72vh;
 }
 
 .profile-contain{
@@ -67,11 +75,20 @@
     color: rgb(158, 158, 158);
 }
 
-.profile-description{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+.profile-intro{
+    font-family: Verdana, Geneva, Tahoma sans-serif;    
     font-size: 15px;
     line-height: 21px;
     margin-top: 40px;
+    width: 40vw;
+    text-align: justify;    
+}
+
+.profile-description{
+    font-family: Verdana, Geneva, Tahoma sans-serif;    
+    font-size: 15px;
+    line-height: 21px;
+    margin-top: 20px;
     width: 40vw;
     text-align: justify;    
 }
@@ -84,6 +101,7 @@
     width: 7vw;
     margin-top: 32px;
     text-align: center;
+    cursor: pointer;
 }
 
 .profile-dowload:hover{
