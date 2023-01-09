@@ -107,7 +107,7 @@
 .profile-dowload{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
-    border: 2px solid rgb(235, 177, 68);
+    border: 2px solid wheat;
     padding: 15px;
     width: 7vw;
     margin-top: 32px;
@@ -116,9 +116,9 @@
 }
 
 .profile-dowload:hover{
-    background-color:  rgb(235, 177, 68);
+    background-color:  wheat;
     padding: 15px;
-    color: white;
+    color: black;
 }
 
 
@@ -179,17 +179,36 @@
     margin-top: 15px;
 }
 
-.studies-name{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
-    font-weight: bold;
+.certificate{
+    display: flex;
+    flex-direction: column;
     margin-left: 50px;
 }
 
 .description{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
-    margin-left: 50px;
     margin-top: 15px;
 }
 
+.studies-name{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.view-certificate{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    margin-top: 15px;
+    border: 2px solid wheat;
+    width: 8vw;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px;
+    color: black;
+}
+
+.view-certificate:hover{
+    background-color:  wheat;
+}
