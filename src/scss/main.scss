@@ -52,6 +52,7 @@
     background-color: white;
     display: flex;
     justify-content: center;
+    height: 100vh;
 }
 
 .container-image{
@@ -108,7 +109,7 @@
     font-size: 16px;
     border: 2px solid wheat;
     padding: 15px;
-    width: 7vw;
+    width: 8vw;
     margin-top: 32px;
     text-align: center;
     cursor: pointer;
@@ -124,7 +125,8 @@
 
 
 .studies-container{
-   
+   margin-left: 10%;
+   height: 100vh;
 }
 
 .education{
@@ -174,7 +176,7 @@
     font-size: 15px;
     color: rgb(158, 158, 158);
     margin-top: 15px;
-    margin-left: -53px;
+    margin-left: -70px;
     width: 12vw;
 }
 
@@ -240,4 +242,69 @@
 
 .view-certificate:hover{
     background-color:  wheat;
+}
+
+
+
+
+
+
+.project-container{
+    margin-left: 10%;
+    height: 100vh;
+ }
+
+ .image-container {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    align-content: center;
+    justify-content: center;
+    column-gap: 50px;
+}
+
+.image-listing {
+    position: relative;
+    margin-top: 60px;
+}
+
+.image-title {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1;
+    position: absolute;
+    height: 30vh;
+    width: 25.4vw;
+    opacity: 0;
+    transition: opacity .2s;
+    background: rgb(223, 194, 141);
+    color: rgb(255, 247, 231);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.location-image {
+    overflow: hidden;
+    width: 40vw;
+    height: 30vh;
+}
+  
+.image-project {
+    filter: blur(0px);
+    transition: filter 0.3s ease-in;
+    transform: scale(1.1);
+    width: 24vw;
+    height: 30vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.image-listing:hover .image-title {
+    opacity: 1;
+}
+  
+.image-listing:hover .location-image img {
+    filter: blur(2px);
 }
