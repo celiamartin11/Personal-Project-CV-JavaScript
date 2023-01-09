@@ -2,19 +2,17 @@
 @import "./core/reset";
 
 .contain{
-    display: grid;
-    grid-template-columns: 10% 90%;
-    height: 100vh;
-}
-
-.about-me{
-    background-color: blue;
-}
+    display: flex;
+    flex-direction: column;
+}   
 
 .menu{
     font-size: 18px;
     background-color: white;
     text-align: center;
+    position: fixed;
+    width: 10vw;
+    height: 100vh;
 }
 
 .resume-image{
@@ -53,6 +51,7 @@
 .profile-container{
     background-color: white;
     display: flex;
+    justify-content: center;
 }
 
 .container-image{
@@ -125,9 +124,7 @@
 
 
 .studies-container{
-    margin-top: 226%;
-    width: 99vw;
-    height: 100vh;
+   
 }
 
 .education{
@@ -158,9 +155,9 @@
 
 .article-container{
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 20% 2% 0%;
     margin-top: 40px;
-    margin-left: -40px;
+    margin-left: -24px;
 }
 
 .article-date{
@@ -177,24 +174,56 @@
     font-size: 15px;
     color: rgb(158, 158, 158);
     margin-top: 15px;
+    margin-left: -53px;
+    width: 12vw;
+}
+
+.time-vertical{
+    border-left: 1px solid wheat;
+    margin-left: 24px;
+}
+
+.vertical-list{
+   position: relative; 
+   height: 10vh;
+}
+
+.circle-list{
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: -6px;
+    width: 10px;
+    height: 10px;
+    border-radius: 8px;
+    background: rgb(255, 207, 118);
+ }
+
+.title-description{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    width: 24vw;
 }
 
 .certificate{
     display: flex;
     flex-direction: column;
     margin-left: 50px;
-}
-
-.description{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
-    margin-top: 15px;
+    width: 24vw;
 }
 
 .studies-name{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
     font-weight: bold;
+}
+
+.description{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    margin-top: 15px;
+    width: 24vw;
 }
 
 .view-certificate{
