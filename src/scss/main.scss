@@ -4,6 +4,7 @@
 .contain{
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }   
 
 .menu{
@@ -104,7 +105,7 @@
     text-align: justify;    
 }
 
-.profile-dowload{
+.profile-download{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
     border: 2px solid wheat;
@@ -112,10 +113,12 @@
     width: 8vw;
     margin-top: 32px;
     text-align: center;
+    text-decoration: none;
+    color: black;
     cursor: pointer;
 }
 
-.profile-dowload:hover{
+.profile-download:hover{
     background-color:  wheat;
     padding: 15px;
     color: black;

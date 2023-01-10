@@ -78,6 +78,14 @@ gulp.task('images', done => {
   done();
 });
 
+gulp.task('document', done => {
+  gulp
+    .src(config.document.src)
+    .pipe(plumber({ errorHandler: notify.onError('Error: <%= error.message %>') }))
+    .pipe(gulp.dest(config.document.dest));
+  done();
+});
+
 gulp.task('js', done => {
   gulp
     .src(config.js.src)
@@ -108,15 +116,24 @@ gulp.task('images-dist', done => {
   done();
 });
 
+gulp.task('document-dist', done => {
+  gulp
+    .src(config.document.src)
+    .pipe(plumber({ errorHandler: notify.onError('Error: <%= error.message %>') }))
+    .pipe(gulp.dest(config.document.dist));
+  done();
+});
+
 // main tasks
 
 gulp.task(
   'default',
-  gulp.series(['clean', 'api', 'html', 'css', 'js', 'images'], done => {
+  gulp.series(['clean', 'api', 'html', 'css', 'js', 'images', 'document'], done => {
     browserSync.init({ server: { baseDir: './public/' } });
     gulp.watch(config.api.src, gulp.series(['api', 'bs-reload']));
     gulp.watch(config.css.src, gulp.series('css'));
     gulp.watch(config.images.src, gulp.series(['images', 'bs-reload']));
+    gulp.watch(config.document.src, gulp.series(['document', 'bs-reload']));
     gulp.watch(config.js.src, gulp.series(['js', 'bs-reload']));
     gulp.watch(config.watch.html, gulp.series(['html', 'bs-reload']));
     done();
@@ -132,7 +149,8 @@ gulp.task(
       'css-dist',
       'html-dist',
       'js-dist',
-      'images-dist'
+      'images-dist', 
+      'document-dist'
       // 'icons-dist'
     ],
     done => done()
