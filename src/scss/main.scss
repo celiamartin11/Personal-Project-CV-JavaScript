@@ -183,9 +183,13 @@
     width: 12vw;
 }
 
+.time-container{
+    position: absolute;
+}
+
 .time-vertical{
     border-left: 1px solid wheat;
-    margin-left: 24px;
+    transform: translate(154px);
 }
 
 .vertical-list{
