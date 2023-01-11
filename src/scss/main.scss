@@ -127,6 +127,7 @@
 
 
 
+
 .studies-container{
    margin-left: 10%;
    height: 100vh;
@@ -298,9 +299,9 @@
 }
 
 .location-image {
-    overflow: hidden;
-    width: 40vw;
-    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
   
 .image-project {
@@ -308,15 +309,45 @@
     transition: filter 0.3s ease-in;
     transform: scale(1.1);
     width: 24vw;
-    height: 30vh;
-    object-fit: cover;
-    object-position: center;
+    object-fit: contain;
+    display: flex;
+    align-items: center;
 }
 
-.image-listing:hover .image-title {
-    opacity: 1;
+
+
+.skills-container{
+    margin-left: 10%;
+    margin-top: 4%;
 }
-  
-.image-listing:hover .location-image img {
-    filter: blur(2px);
+
+.skills-contain{
+    display: flex;
+    flex-direction: column;
+}
+
+.professional-skills{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+.name-skills{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+.line-skills{
+    width: 40vw;
+    height: 1.4vh;
+    border-radius: 100px;
+    border: 2px solid wheat;
+}
+
+.line-skills::-webkit-progress-value{
+    background-color: wheat;
+}
+
+.line-skills::-webkit-progress-bar{
+    background-color: white;
 }
