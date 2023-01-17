@@ -49,6 +49,12 @@
     margin-top: 20px;
 }
 
+.icon-platzi{
+    width: 2.2vw;
+    margin-left: 6px;
+    margin-top: 12px;
+}
+
 .profile-container{
     background-color: white;
     display: flex;
@@ -267,7 +273,7 @@
     height: 100vh;
  }
 
- .image-container {
+.image-container {
     display: grid;
     grid-template-columns: 400px 400px 400px;
     align-content: center;
@@ -276,42 +282,38 @@
 }
 
 .image-listing {
+    width: 24vw;
     position: relative;
     margin-top: 60px;
+    border: 1px solid rgb(230, 230, 230);
 }
 
-.image-title {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.5em;
-    font-weight: bold;
-    text-decoration: none;
-    z-index: 1;
-    position: absolute;
-    height: 30vh;
-    width: 25.4vw;
-    opacity: 0;
-    transition: opacity .2s;
-    background: rgb(223, 194, 141);
-    color: rgb(255, 247, 231);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.location-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.image-listing:hover {
+    box-shadow: 0 0 18px #c69605;
 }
   
 .image-project {
-    filter: blur(0px);
-    transition: filter 0.3s ease-in;
-    transform: scale(1.1);
-    width: 24vw;
-    object-fit: contain;
+    width: 24vw;   
+}
+
+.title-container {
+    height: 8vh; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    line-height: 26px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+}
+
+.title-project {
+    text-transform: uppercase;  
+    font-weight: bold; 
+}
+
+.project {
+    text-align: center;   
 }
 
 
@@ -335,13 +337,22 @@
 .name-skills{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
+    margin-top: 15px;
+}
+
+.personal-skills{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
+    font-weight: bolder;
+    font-size: 24px;
+    margin-top: 80px;
 }
 
 .line-skills{
     width: 40vw;
-    height: 1.4vh;
+    height: 1.5vh;
     border-radius: 100px;
     border: 2px solid wheat;
+    margin-top: 8px;
 }
 
 .line-skills::-webkit-progress-value{
