@@ -8,10 +8,14 @@
   <link rel="stylesheet" href="./assets/css/main.css"/>
 </head>
 <body>
-  <main class="contain">
-    <section class="menu">
-      <img class="resume-image" src="./assets/images/celia-martin.jpg" alt="Celia Martín">
-      <h1 class="resume-name">Celia Martín</h1>
+  <header>
+    <div class="small-container">
+      <img class="small-image" src="./assets/images/celia-martin.jpg" alt="Celia Martín">
+      <!--<h1 class="small-name">Celia Martín</h1>-->
+    </div>
+    <div>
+      <img class="" src="" alt="">
+      <!--
       <nav class="menu-container">
         <ul>
           <li class="option"><a class="menu-container" href="#about-me">Sobre mí</a></li>
@@ -19,71 +23,159 @@
           <li class="option"><a class="menu-container" href="#proyects">Proyectos</a></li>
           <li class="option"><a class="menu-container" href="#skills">Cualidades</a></li>
         </ul>
-      </nav>
-      <div class="icon-container">
-        <a href="https://github.com/celiamartin11" target="_blank"><img class="icon" src="https://cdn-icons-png.flaticon.com/512/5968/5968866.png" alt="github"></a>
-        <a href="https://www.linkedin.com/in/celiamartinh/" target="_blank"><img class="icon" src="https://cdn-icons-png.flaticon.com/512/3536/3536569.png" alt="linkedin"></a>
-        <a href="https://platzi.com/p/celiamartinherranz11/" target="_blank"><img class="icon-platzi" src="https://cdn-icons-png.flaticon.com/512/3569/3569381.png" alt="certificate"></a>
-      </div>
-    </section> 
+      </nav>-->
+    </div>
+  </header>
+  <main>
     <section class="profile-container" id="about-me">
       <div class="profile-contain">
         <img class="profile-image" src="./assets/images/celia-martin.jpg" alt="Celia Martín">
       </div>
-      <div class="profile-contain">
+      <div class="info-contain">
         <h1 class="profile-name">Celia Martín Herranz</h1>
         <h2 class="profile-position">Programadora Web Front-end Junior</h2>
         <p class="profile-intro">Con el mismo entusiasmo, y la misma creatividad que tengo como Educadora Infantil, quiero hacerme un hueco en este nuevo mundo como Programadora Web.</p> 
-        <p class="profile-description">Podré aportar organización, compromiso, constancia, esfuerzo y mucha creatividad. El trabajo en equipo, y el trabajo autónomo no son un problema.</p>        
-        <p class="profile-description">Las ganas de aprender y de evolucionar personal y profesionalmente son imparables. Tengo claro que el único límite de la programación, es tu propia imaginación.</p>              
-        <a href="./assets/document/Curriculum_Celia_Martín.pdf" download class="profile-download">Descargar CV</a>
+        <p class="profile-intro">Podré aportar organización, compromiso, constancia, esfuerzo y mucha creatividad. Las ganas de aprender y de evolucionar personal y profesionalmente son imparables. Tengo claro que el único límite de la programación, es tu propia imaginación.</p>              
+        <a class="profile-download" href="./assets/document/Curriculum_Celia_Martín.pdf" download>Descargar CV</a>
       </div>
     </section>
     <section class="studies-container" id="education">
       <h1 class="education">Educación</h1>
-      <div class="education-contain">
-        <article>
-          <h2 class="article-title">Estudios</h2>
-          <div class="article-container">
-            <div class="article-date">
-              <h3 class="date">2022</h3>
-              <h4 class="school-name">Adalab</h4>
-            </div>
-            <div class="time-container">
-              <ul class="time-vertical">
-                <li class="vertical-list"><b class="circle-list"></b></li>
-                <li class="vertical-list"><b class="circle-list"></b></li>
-              </ul>
-            </div>
-            <div class="title-description">
-              <h2 class="studies-name">Bootcamp Front-End
-              </h2>
-              <p class="description"> - HTML5, CSS3, SASS, Flexbox, Grid. <br>- JavaScript, React. <br>- Aplicaciones con Node JS. <br>- Control de versiones con Git. <br>- Manejo de Slack, GitHub, VS Code, Gulp, Terminal, Zeplin.</p>
-            </div>
+      <h2 class="article-title">Estudios</h2>
+      <article class="studies">
+        <div class="study-item">
+          <div>
+            <h3 class="date">2022</h3>
+            <h4 class="school-name">Adalab</h4>
           </div>
-          <div class="article-container">
-            <div class="article-date">
-              <h3 class="date">2020</h3>
-              <h4 class="school-name">Escuela Politécnica Giner</h4>
-            </div>
-            <div class="title-description">
-              <h2 class="studies-name">Técnico Superior en Educación Infantil</h2>
-              <p class="description">Formar parte de un centro educativo donde pueda ayudar y apoyar a mis alumnos a tener una educación óptima y a desarrollarse, y desarrollarme personal y profesionalmente como maestra.</p>
-            </div>
+          <div>
+            <ul class="time-vertical">
+              <li class="vertical-list"><b class="circle-bootcamp"></b></li>
+              <li class="vertical-list"><b class="circle-education"></b></li>
+            </ul>
+          </div>
+          <div class="title-description">
+            <h2 class="studies-name">Bootcamp Front-End</h2>
+            <p class="description"> - HTML5, CSS3 (Flexbox, Grid), SASS. <br>- JavaScript, React. <br>- Aplicaciones con Node JS. <br>- Control de versiones con Git. <br>- Manejo de GitHub, VS Code, Gulp, Terminal, Zeplin.</p>
+          </div>
+        </div>
+      </article>
+      <article class="studies">
+        <div class="study-item">
+          <div>
+            <h3 class="date">2020</h3>
+            <h4 class="school-name">Escuela Politécnica Giner</h4>
+          </div>
+          <div>
+            <ul>
+              <li><b></b></li>
+              <li><b></b></li>
+            </ul>
+          </div>
+          <div class="title-description">
+            <h2 class="studies-name">Técnico Superior en Educación Infantil</h2>
+            <p class="description">Formar parte de un centro educativo donde pueda ayudar y apoyar a mis alumnos a tener una educación óptima y a desarrollarse, y desarrollarme personal y profesionalmente como maestra.</p>
+          </div>
+        </div>
+      </article>
+      <article class="courses">
+        <h2 class="article-title">Cursos</h2>
+        <div class="course-container">
+          <div class="course-item">
+            <h3 class="course-date">2023 - Platzi</h3>
+            <h2 class="course">Curso Profesional de Git y GitHub</h2>
+            <a class="course-link" href="https://platzi.com/p/celiamartinherranz11/curso/1557-git-github/diploma/detalle/" target="_blank">Ver Certificado</a>
+          </div>
+        </div>
+        <div class="course-container">
+          <div class="course-item">
+            <h3 class="course-date">2023 - Platzi</h3>
+            <h2 class="course">Curso Profesional de Git y GitHub</h2>
+            <a class="course-link" href="https://platzi.com/p/celiamartinherranz11/curso/1557-git-github/diploma/detalle/" target="_blank">Ver Certificado</a>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section class="project-container" id="proyects">
+      <h1 class="education">Proyectos</h1>
+      <div class="image-container"> 
+        <article class="image-listing">
+          <a href="https://celiamartin11.github.io/personal-project-piano/" target="_blank"><img class="image-project" src="./assets/images/piano_virtual.png" alt="Piano Virtual"></a>
+          <div class="title-container">
+            <p class="title-project">Piano Virtual</p>
+            <p class="project">Proyecto personal</p>
           </div>
         </article>
-        <article>
-          <h2 class="article-title">Cursos</h2>
-          <div class="article-container">
-            <div class="article-date">
-              <h3 class="date">2023</h3>
-              <h4 class="school-name">Platzi</h4>
-            </div>
-            <div class="certificate">
-              <h2 class="studies-name">Curso Profesional de Git y GitHub</h2>
-              <a class="view-certificate" href="https://platzi.com/p/celiamartinherranz11/curso/1557-git-github/diploma/detalle/" target="_blank">Ver Certificado</a>
-            </div>
+        <article class="image-listing">
+          <a href="https://celiamartin11.github.io/modulo-3-evaluacion-final/" target="_blank"><img class="image-project" src="./assets/images/rick_and_morty.png" alt="Rick and Morty"></a>
+          <div class="title-container">
+            <p class="title-project">Rick and Morty</p>
+            <p class="project">Proyecto individual</p>
           </div>
+        </article>
+        <article class="image-listing">
+          <a href="http://beta.adalab.es/project-promo-r-module-2-team-7/" target="_blank"><img class="image-project" src="./assets/images/minion.png" alt="Minion"></a>
+          <div class="title-container">
+            <p class="title-project">Minion</p>
+            <p class="project">Proyecto grupal</p>
+          </div>
+        </article>
+        <article class="image-listing">
+          <a href="https://celiamartin11.github.io/modulo-2-evaluacion-final/" target="_blank"><img class="image-project" src="./assets/images/breaking_bad.png" alt="Breaking Bad"></a>
+          <div class="title-container">
+            <p class="title-project">Breaking Bad</p>
+            <p class="project">Proyecto individual</p>
+          </div>
+        </article>
+        <article class="image-listing">
+          <a href="http://beta.adalab.es/project-promo-r-module-1-team-9/" target="_blank"><img class="image-project" src="./assets/images/flex_ladies.png" alt="Flex Ladies"></a>
+          <div class="title-container">
+            <p class="title-project">Flex Ladies</p>
+            <p class="project">Proyecto grupal</p>
+          </div>
+        </article>
+        <article class="image-listing">
+          <a href="https://celiamartin11.github.io/modulo-1-evaluacion-final/" target="_blank"><img class="image-project" src="./assets/images/proxy.png" alt="City"></a>
+          <div class="title-container">
+            <p class="title-project">City</p>
+            <p class="project">Proyecto individual</p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="skills" id="skills">
+      <h1 class="education">Cualidades</h1>
+      <div class="skills-container">
+        <article>
+          <h2 class="professional-skills">Habilidades profesionales</h2>
+          <h3 class="name-skills">HTML</h3>
+          <progress class="line-skills" max="100" value="95"></progress>
+          <h3 class="name-skills">CSS</h3>
+          <progress class="line-skills" max="100" value="95"></progress>
+          <h3 class="name-skills">JavaScript</h3>
+          <progress class="line-skills" max="100" value="80"></progress>
+          <h3 class="name-skills">React</h3>
+          <progress class="line-skills" max="100" value="82"></progress>
+        </article>
+        <article>
+          <h2 class="personal-skills">Habilidades personales</h2>
+          <h3 class="name-skills">Organizada</h3>
+          <progress class="line-skills" max="100" value="98"></progress>
+          <h3 class="name-skills">Adaptable</h3>
+          <progress class="line-skills" max="100" value="90"></progress>
+          <h3 class="name-skills">Comprometida</h3>
+          <progress class="line-skills" max="100" value="95"></progress>
+          <h3 class="name-skills">Trabajo en equipo</h3>
+          <progress class="line-skills" max="100" value="90"></progress>
+        </article>
+        </div>
+    </section>
+  </main>
+</body>
+</html> 
+
+<!--
+         
           <div class="article-container">
             <div class="article-date">
               <h3 class="date">2023</h3>
@@ -137,80 +229,18 @@
         </article>
       </div>        
     </section>
-    <section class="project-container" id="proyects">
-      <h1 class="education">Proyectos</h1>
-      <div class="image-container"> 
-        <article class="image-listing">
-          <a href="https://celiamartin11.github.io/personal-project-piano/" target="_blank"><img class="image-project" src="./assets/images/piano_virtual.png" alt="Piano Virtual"></a>
-          <div class="title-container">
-            <p class="title-project">Piano Virtual</p>
-            <p class="project">Proyecto personal</p>
-          </div>
-        </article>
-        <article class="image-listing">
-          <a href="https://celiamartin11.github.io/modulo-3-evaluacion-final/" target="_blank"><img class="image-project" src="./assets/images/rick_and_morty.png" alt="Rick and Morty"></a>
-          <div class="title-container">
-            <p class="title-project">Rick and Morty</p>
-            <p class="project">Proyecto individual</p>
-          </div>
-        </article>
-        <article class="image-listing">
-          <a href="http://beta.adalab.es/project-promo-r-module-2-team-7/" target="_blank"><img class="image-project" src="./assets/images/minion.png" alt="Minion"></a>
-          <div class="title-container">
-            <p class="title-project">Minion</p>
-            <p class="project">Proyecto grupal</p>
-          </div>
-        </article>
-        <article class="image-listing">
-          <a href="https://celiamartin11.github.io/modulo-2-evaluacion-final/" target="_blank"><img class="image-project" src="./assets/images/breaking_bad.png" alt="Breaking Bad"></a>
-          <div class="title-container">
-            <p class="title-project">Breaking Bad</p>
-            <p class="project">Proyecto individual</p>
-          </div>
-        </article>
-        <article class="image-listing">
-          <a href="http://beta.adalab.es/project-promo-r-module-1-team-9/" target="_blank"><img class="image-project" src="./assets/images/flex_ladies.png" alt="Flex Ladies"></a>
-          <div class="title-container">
-            <p class="title-project">Flex Ladies</p>
-            <p class="project">Proyecto grupal</p>
-          </div>
-        </article>
-        <article class="image-listing">
-          <a href="https://celiamartin11.github.io/modulo-1-evaluacion-final/" target="_blank"><img class="image-project" src="./assets/images/proxy.png" alt="City"></a>
-          <div class="title-container">
-            <p class="title-project">City</p>
-            <p class="project">Proyecto individual</p>
-          </div>
-        </article>
+        -->
+
+
+
+<!--<main class="contain">-->
+    <!--<section class="menu">
+      <img class="resume-image">
+      <h1 class="resume-name">
+
+      <div class="icon-container">
+        <a href="https://github.com/celiamartin11" target="_blank"><img class="icon" src="https://cdn-icons-png.flaticon.com/512/5968/5968866.png" alt="github"></a>
+        <a href="https://www.linkedin.com/in/celiamartinh/" target="_blank"><img class="icon" src="https://cdn-icons-png.flaticon.com/512/3536/3536569.png" alt="linkedin"></a>
+        <a href="https://platzi.com/p/celiamartinherranz11/" target="_blank"><img class="icon-platzi" src="https://cdn-icons-png.flaticon.com/512/3569/3569381.png" alt="certificate"></a>
       </div>
-    </section>
-    <section class="skills" id="skills">
-      <h1 class="education">Cualidades</h1>
-      <div class="skills-container">
-        <article class="skills-contain">
-          <h2 class="professional-skills">Habilidades profesionales</h2>
-          <h3 class="name-skills">HTML</h3>
-          <progress class="line-skills" max="100" value="95"></progress>
-          <h3 class="name-skills">CSS</h3>
-          <progress class="line-skills" max="100" value="95"></progress>
-          <h3 class="name-skills">JavaScript</h3>
-          <progress class="line-skills" max="100" value="80"></progress>
-          <h3 class="name-skills">React</h3>
-          <progress class="line-skills" max="100" value="82"></progress>
-        </article>
-        <article>
-          <h2 class="personal-skills">Habilidades personales</h2>
-          <h3 class="name-skills">Organizada</h3>
-          <progress class="line-skills" max="100" value="98"></progress>
-          <h3 class="name-skills">Adaptable</h3>
-          <progress class="line-skills" max="100" value="90"></progress>
-          <h3 class="name-skills">Comprometida</h3>
-          <progress class="line-skills" max="100" value="95"></progress>
-          <h3 class="name-skills">Trabajo en equipo</h3>
-          <progress class="line-skills" max="100" value="90"></progress>
-        </article>
-        </div>
-    </section>
-  </main>
-</body>
-</html>
+    </section> -->
