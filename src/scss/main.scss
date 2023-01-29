@@ -1,42 +1,113 @@
 @import "./core/variables";
 @import "./core/reset";
 
+body{
+    overflow-x: hidden;
+}
+
 header{
     background-color: white;
     height: 10vh;
+    overflow-x: hidden;
+    @media all and (min-width: 768px){
+        width: 14vw;
+        height: 150vh;
+        position: fixed;
+    }
+    @media all and (min-width: 1280px){
+        width: 8vw;
+    }
+}
+
+main {
+    @media all and (min-width: 768px){
+        margin-left: 8vw;
+    }
+    @media all and (min-width: 1280px){
+        margin-left: 8vw;
+    }
 }
 
 .small-container{
     width: 18vw;
-    height: 10vh;
+    height: 11vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media all and (min-width: 768px){
+        width: 14vw;
+        height: 15vh;
+    }
+    @media all and (min-width: 1280px){
+        width: 8vw;
+    }
 }
 
 .small-image{
-    width: 6vw;
+    width: 10vw;
+    @media all and (min-width: 1280px){
+        width: 4vw; 
+    }
 }
+
+/*.small-name{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    margin-top: 10px;
+}*/
 
 .profile-container{
     background: linear-gradient(132deg, #fff9ec 0%, #fff9ec 50%, rgb(255, 235, 198) calc(80% + 1px), rgb(255, 235, 198) 80%, wheat calc(80% + 1px), wheat 90%, rgb(239, 202, 132) calc(90% + 1px), rgb(239, 202, 132) 100%);
     height: 90vh;
+    @media all and (min-width: 768px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // margin-left: 15%;
+        height: 100vh;
+    }
+    @media all and (min-width: 1280px){
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+        // margin-left: 8%;
+    }
 }
 
 .profile-contain{
     text-align: center;
+    @media all and (min-width: 1280px){
+        margin-top: -20%;
+    }
 }
 
 .profile-image{
     width: 25vw;
     margin-top: 20px;
+    @media all and (min-width: 768px){
+        width: 40vw;
+        height: 35vh;
+        object-fit: cover;
+    }
+    @media all and (min-width: 1280px){
+        width: 30vw;
+        height: 72vh;
+    }
 }
 
 .info-contain{
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media all and (min-width: 768px){
+        margin-top: 5%;
+    }
+    @media all and (min-width: 1280px){
+        margin-top: -20vw;
+        align-items: flex-start;
+        margin-left: 4%;
+    }
 }
 
 .profile-name{
@@ -45,6 +116,9 @@ header{
     font-size: 21px;
     margin-top: 15px;
     text-align: center;
+    @media all and (min-width: 768px){
+        font-size: 35px;
+    }
 }
 
 .profile-position{
@@ -53,6 +127,10 @@ header{
     margin-top: 12px;
     color: rgb(158, 158, 158);
     text-align: center;
+    @media all and (min-width: 768px){
+        font-size: 18px;
+        margin-top: 3%;
+    }
 }
 
 .profile-intro{
@@ -62,6 +140,17 @@ header{
     width: 90vw;
     margin-top: 12px;
     text-align: center;
+    @media all and (min-width: 768px){
+        font-size: 18px;
+        line-height: 22px;
+        margin-top: 5%;
+        width: 60vw;
+        text-align: justify; 
+    }
+    @media all and (min-width: 1280px){
+        width: 40vw;
+        font-size: 16px;
+    }
 }
 
 .profile-download{
@@ -72,6 +161,11 @@ header{
     padding: 6px;
     text-decoration: none;
     color: black;
+    @media all and (min-width: 768px){
+        font-size: 16px;
+        padding: 15px;
+        margin-top: 5%;
+    }
 }
 
 .profile-download:hover{
@@ -82,6 +176,13 @@ header{
 .studies-container{
     height: 150vh;
     background: linear-gradient(39deg, rgb(239, 202, 132) 0%, rgb(239, 202, 132) 8%, wheat calc(8% + 1px), wheat 15%, rgb(255, 235, 198) calc(15% + 1px), rgb(255, 235, 198) 20%, white calc(60% + 1px), white 100%);
+    @media all and (min-width: 768px){
+        height: 100vh;
+    }
+    @media all and (min-width: 1280px){
+        height: 100vh;
+        display: f;
+    }
 }
 
 .education{
@@ -95,12 +196,30 @@ header{
     display: flex;
     align-items: center;
     justify-content: end;
+    @media all and (min-width: 768px){
+        font-size: 20px;
+        width: 40vw;
+        height: 3vh;
+    }
+    @media all and (min-width: 1280px){
+        font-size: 28px;
+        width: 20vw;
+        height: 6vh;
+    }
 }
 
 .article-title{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    font-weight: bolder;
     font-size: 15px;
-    margin: 15px 0 0 15px;
+    margin: 25px 0 0 15px;
+    @media all and (min-width: 768px){
+        font-size: 20px;
+        margin: 3% 0 0 26%;
+    }
+    @media all and (min-width: 1280px){
+        font-size: 24px;
+        margin: 3% 0 0 11%;
+    }
 }
 
 .studies{
@@ -111,32 +230,62 @@ header{
 .study-item{
     width: 90vw;
     display: grid;
-    grid-template-columns: 10vw 15vw 80vw;
+    grid-template-columns: 10vw 15vw 70vw;
+    margin-top: 4%;
+    @media all and (min-width: 768px){
+        grid-template-columns: 30vw 7vw 65vw;
+    }
+    @media all and (min-width: 1280px){
+        grid-template-columns: 14vw 3vw 60vw;
+        margin-top: 2%;
+    }
+}
+
+.study-date{
+    text-align: end;
 }
 
 .date{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 10px;
     margin-top: 10px;
+    @media all and (min-width: 768px){
+        font-size: 14px;
+    }
+    @media all and (min-width: 1280px){
+        font-size: 12px;
+    }
 }
 
 .school-name{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 10px;
-    margin-top: 10px;
+    font-size: 8.5px;
+    margin-top: 8px;
     color: rgb(158, 158, 158);
-    line-height: 12px;
+    line-height: 14px;
+    text-align: left;
+    @media all and (min-width: 768px){
+        font-size: 13px;
+        text-align: right;
+        margin-top: 15px;
+    }
+    @media all and (min-width: 1280px){
+        font-size: 12px;
+    }
 }
 
 .time-vertical{
     border-left: 1px solid wheat;
     transform: translate(25px);
     margin-top: 11px;
+    height: 209%;
+    @media all and (min-width: 768px){
+        height: 195%;
+    }
 }
 
 .vertical-list{
    position: relative; 
-   height: 15vh;
 }
 
 .circle-bootcamp{
@@ -145,9 +294,19 @@ header{
     content: '';
     position: absolute;
     top: 0px;
-    left: -4px;
-    width: 6px;
-    height: 7px;
+    left: -2.5px;
+    width: 4px;
+    height: 5px;
+    @media all and (min-width: 768px){
+        left: -4px;
+        width: 6px;
+        height: 7px;
+    }
+    @media all and (min-width: 1280px){
+        left: -4px;
+        width: 6px;
+        height: 7px;
+    }
  }
 
  .circle-education{
@@ -155,10 +314,22 @@ header{
     background: #ffcf76;
     content: '';
     position: absolute;
-    top: 60px;
-    left: -4px;
-    width: 6px;
-    height: 7px;
+    top: 158px;
+    left: -2.5px;
+    width: 4px;
+    height: 5px;
+    @media all and (min-width: 768px){
+        top: 212px;
+        left: -4px;
+        width: 6px;
+        height: 7px;
+    }
+    @media all and (min-width: 1280px){
+        top: 185px;
+        left: -4px;
+        width: 6px;
+        height: 7px;
+    }
  }
 
 .title-description{
@@ -166,18 +337,38 @@ header{
 }
 
 .studies-name{
-    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
     font-weight: bold;
     width: 70vw;
     line-height: 18px;
+    @media all and (min-width: 768px){
+        font-size: 18px;
+    }
+    @media all and (min-width: 1280px){
+        font-size: 15px;
+    }
 }
 
 .description{
-    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
     margin-top: 10px;
     line-height: 18px;
-    width: 68vw;
+    width: 62vw;
     overflow-wrap: break-word;
+    text-align: justify;
+    @media all and (min-width: 768px){
+        font-size: 16px;
+        line-height: 24px;
+        width: 46vw;
+    }
+    @media all and (min-width: 1280px){
+        font-size: 14px;
+        line-height: 24px;
+        width: 26vw;
+        
+    }
 }
 
 //Course
@@ -189,6 +380,12 @@ header{
     height: 25vh;
     width: 80vw;
     margin: 4vw 0 0 12vw;
+    @media all and (min-width: 768px){
+        margin: -3vw 0 0 23vw;
+    }
+    @media all and (min-width: 1280px){
+        margin: 0vw 0 0 10vw;
+    }
 }
 
 .course-item{
@@ -196,20 +393,38 @@ header{
     width: 80vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-
+    @media all and (min-width: 768px){
+        margin: 40px 0 0 8px;
+    }
+    @media all and (min-width: 1280px){
+        margin: 1vw 0 0 0vw;
+    }
 }
 
 .course-date{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 12px;
+    font-size: 11px;
     line-height: 30px;
+    @media all and (min-width: 768px){
+        font-size: 15px;
+    }
+    @media all and (min-width: 1280px){
+        font-size: 12px;
+    }
 }
 
 .course{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: bold;
+    @media all and (min-width: 768px){
+        font-size: 16px;
+        margin-top: 2%;
+    }
+    @media all and (min-width: 1280px){
+        font-size: 15px;
+        margin-top: 1%;
+    }
 }
 
 .course-link{
@@ -221,6 +436,19 @@ header{
     margin-top: 10px;
     text-decoration: none; 
     color: black;
+    @media all and (min-width: 768px){
+        font-size: 15px;
+        width: 16vw;
+        text-align: center;
+        padding: 12px;
+        margin-top: 3%;
+    }
+    @media all and (min-width: 1280px){
+        font-size: 14px;
+        width: 8vw;
+        text-align: center;
+        margin-top: 2%;
+    }
 }
 
 .course-link:hover{
@@ -234,8 +462,13 @@ header{
 }
 
 .image-container {
-    display: grid;
-    grid-template-columns: 50vw 50vw;   
+    display: flex;
+    gap: 6vw;
+    flex-wrap: wrap;
+    justify-content: center;  
+    @media all and (min-width: 1280px){
+        gap: 3.5vw;
+    }
 }
 
 .image-container:hover > :not(:hover) {
@@ -243,11 +476,17 @@ header{
 }
 
 .image-listing {
-    border: 1px solid rgb(230, 230, 230);
+    border: 1px solid none;
     width: 35vw;
     position: relative;
     margin-top: 20px;
     text-align: center;
+    @media all and (min-width: 768px){
+        width: 35vw;
+    }
+    @media all and (min-width: 1280px){
+        width: 25vw;
+    }
 }
 
 .image-listing:hover {
@@ -257,12 +496,32 @@ header{
 .image-project {
     width: 35vw; 
     transition: .3s; 
+    @media all and (min-width: 768px){
+        width: 35vw;
+    }
+    @media all and (min-width: 1280px){
+        width: 25vw;
+    }
 }
 
 .title-container {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 10px;
     line-height: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media all and (min-width: 768px){
+        font-size: 15px;
+        line-height: 26px;
+        height: 8vh; 
+    }
+    @media all and (min-width: 1280px){
+        font-size: 15px;
+        line-height: 26px;
+        height: 8vh; 
+    }
 }
 
 .title-project {
@@ -278,27 +537,54 @@ header{
  }
 
  .skills-container{
-    margin-left: 10%;
+    margin-left: 6%;
     margin-top: 10%;
+    @media all and (min-width: 768px){
+        margin-left: 12%;
+    }
+    @media all and (min-width: 1280px){
+        margin-top: 4%;
+        margin-left: 10%;
+    }
 }
 
 .professional-skills{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bolder;
-    font-size: 15px;
+    font-size: 12px;
+    @media all and (min-width: 768px){
+        font-size: 20px;
+    }
+    @media all and (min-width: 1280px){
+        font-size: 15px;
+    }
 }
 
 .name-skills{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 12px;
+    font-size: 10px;
     margin-top: 10px;
+    @media all and (min-width: 768px){
+        font-size: 18px;
+        margin-top: 3%;
+    }
+    @media all and (min-width: 1280px){
+        font-size: 14px;
+        margin-top: 1.5%;
+    }
 }
 
 .personal-skills{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bolder;
     font-size: 15px;
     margin-top: 40px;
+    @media all and (min-width: 768px){
+        font-size: 20px;
+    }
+    @media all and (min-width: 1280px){
+        font-size: 15px;
+    }
 }
 
 .line-skills{
@@ -306,487 +592,14 @@ header{
     border-radius: 100px;
     width: 60vw;
     height: 2vh;
-}
-
-.line-skills::-webkit-progress-value{
-    background-color: wheat;
-}
-
-.line-skills::-webkit-progress-bar{
-    background-color: white;
-}
-
-
-
-
-
-
-/*
-//Styles for the whole page.
-.contain{
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
-}   
-
-//Menu section.
-.menu{
-    font-size: 18px;
-    background-color: white;
-    text-align: center;
-    position: fixed;
-    width: 10vw;
-    height: 100vh;
-    @media all and (max-width: 768px){
-        width: 16vw;
-    }
-}
-
-.resume-image{
-    width: 4vw;
-    margin-top: 40px;
-}
-
-.resume-name{
-    margin-top: 15px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    @media all and (max-width: 768px){
-        font-size: 14px;
-    }
-}
-
-.menu-container{
-    margin-top: 50px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 18px;
-    text-decoration: none;
-    color: black;
-}
-
-.option{
-    padding: 20px;
-    cursor: pointer;
-}
-
-.option:hover{
-    background-color: rgb(245, 233, 210);
-}
-
-.icon-container{
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    padding-top: 20px;
-}
-
-.icon{
-    height: 3vh;
-    @media all and (max-width: 768px){
-        height: 2.5vh;
-    }
-}
-
-.icon-platzi{
-    height: 4vh;
-    @media all and (max-width: 768px){
-        height: 3.5vh;
-    }
-}
-
-
-//Profile section.
-.profile-container{
-    background-color: white;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 100vh;
-    background: linear-gradient(132deg, #fff9ec 0%, #fff9ec 50%, rgb(255, 235, 198) calc(80% + 1px), rgb(255, 235, 198) 80%, wheat calc(80% + 1px), wheat 90%, rgb(239, 202, 132) calc(90% + 1px), rgb(239, 202, 132) 100%);
-    @media all and (max-width: 768px){
-        padding-top: 50px;
-    }
-}
-
-.profile-image{
-    object-fit: cover;
-    width: 39vw;
-    height: 72vh;
-    @media all and (max-width: 768px){
-        height: 30vh;
-    }
-}
-
-.profile-contain{
-    display: flex;
-    flex-direction: column;
-    margin-left: 80px;
-    @media all and (max-width: 768px){
-        display: flex;
-        flex-direction: column;
-        margin-left: 80px;
-        align-items: center;
-    }
-}
-
-.profile-name{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: bolder;
-    font-size: 38px;
-    margin-top: 10%;
-    @media all and (max-width: 768px){
-        margin-top: -30%;
-    }
-}
-
-.profile-position{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-    margin-top: 20px;
-    color: rgb(158, 158, 158);
-}
-
-.profile-intro{
-    font-family: Verdana, Geneva, Tahoma sans-serif;    
-    font-size: 15px;
-    line-height: 21px;
-    margin-top: 40px;
-    width: 40vw;
-    text-align: justify;
-    @media all and (max-width: 768px){
-        width: 60vw;
-    }    
-}
-
-.profile-description{
-    font-family: Verdana, Geneva, Tahoma sans-serif;    
-    font-size: 15px;
-    line-height: 21px;
-    margin-top: 20px;
-    width: 40vw;
-    text-align: justify; 
-    @media all and (max-width: 768px){
-        width: 60vw;
-    }  
-}
-
-.profile-download{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-    border: 2px solid wheat;
-    padding: 15px;
-    width: 8vw;
-    margin-top: 32px;
-    text-align: center;
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-    @media all and (max-width: 768px){
-        width: 15vw;
-    }
-}
-
-.profile-download:hover{
-    background-color:  wheat;
-    padding: 15px;
-    color: black;
-}
-
-//Education section.
-.studies-container{
-    margin-left: 10%;
-    height: 100vh;
-    background: linear-gradient(39deg, rgb(239, 202, 132) 0%, rgb(239, 202, 132) 8%, wheat calc(8% + 1px), wheat 15%, rgb(255, 235, 198) calc(15% + 1px), rgb(255, 235, 198) 20%, white calc(20% + 1px), white 100%);
-}
-
-.education{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bolder;
-    font-size: 28px;
-    margin-top: 60px;
-    padding-right: 28px;
-    background-color: wheat;
-    width: 20vw;
-    height: 6vh;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    @media all and (max-width: 768px){
-        margin-left: 6%;
-        width: 26vw;
-    }
-}
-
-.education-contain{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    margin-left: 12%;
-    margin-right: -4%;
-    margin-top: 3.5%;
-    @media all and (max-width: 768px){
-        grid-template-rows: 46%;
-        grid-template-columns: none;
-        margin-left: 12%;
-        margin-right: -43%;
-    }
-}
-
-//Curses section.
-/*.course-contain{
-    @media all and (max-width: 768px){
-        height: 2vh;
-    }
-}*/
-/*
-.article-title{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    font-weight: bolder;
-    font-size: 24px;
-    @media all and (max-width: 768px){
-        font-size: 20px;
-    }
-}
-
-.article-container{
-    display: grid;
-    grid-template-columns: 20% 2%;
-    margin-top: 40px;
-    margin-left: -24px;
-    @media all and (max-width: 768px){
-        margin-top: 26px;
-        margin-left: -100px;
-    }
-}
-
-.article-date{
-    text-align: end;
-}
-
-.date{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
-    margin-right: 12px;
-    @media all and (max-width: 768px){
-        margin-right: -5px;
-    }
-}
-
-.school-name{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
-    color: rgb(158, 158, 158);
-    margin-top: 15px;
-    margin-left: -70px;
-    width: 12vw;
-    @media all and (max-width: 768px){
-        font-size: 11px;
-        margin-left: 16px;
-        width: 25vw;
-    }
-}
-
-.time-container{
-    position: absolute;
-}
-
-.time-vertical{
-    border-left: 1px solid wheat;
-    transform: translate(154px);
-    margin-left: 7px;
-    @media all and (max-width: 768px){
-        margin-left: 76px;
-    }
-}
-
-.vertical-list{
-   position: relative; 
-   height: 19.4vh;
-   @media all and (max-width: 768px){
-        height: 20vh;    
-   }
-}
-
-.circle-list{
-    content: '';
-    position: absolute;
-    top: 14px;
-    left: -5px;
-    width: 10px;
-    height: 10px;
-    border-radius: 8px;
-    background: rgb(255, 207, 118);
- }
-
-.title-description{
-    display: flex;
-    flex-direction: column;
-    margin-left: 50px;
-    width: 24vw;
-    @media all and (max-width: 768px){
+    @media all and (min-width: 768px){
+        margin-top: 2%;
         width: 50vw;
     }
-}
-
-.certificate{
-    display: flex;
-    flex-direction: column;
-    margin-left: 50px;
-    width: 24vw;
-    @media all and (max-width: 768px){
-        width: 60vw;
-        flex-direction: row;
-        margin-left: 10px;
+    @media all and (min-width: 1280px){
+        margin-top: 1%;
+        width: 40vw;
     }
-}
-
-.studies-name{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.description{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
-    margin-top: 15px;
-    width: 27.1vw;
-    line-height: 25px;
-    text-align: justify;
-    @media all and (max-width: 768px){
-        width: 55vw;
-    }
-}
-
-.view-certificate{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
-    margin-top: 15px;
-    border: 2px solid wheat;
-    width: 8vw;
-    text-align: center;
-    text-decoration: none;
-    padding: 12px;
-    color: black;
-    @media all and (max-width: 768px){
-        width: 16vw;
-    }
-}
-
-.view-certificate:hover{
-    background-color:  wheat;
-}
-
-
-//Project section.
-.project-container{
-    margin-left: 10%;
-    height: 100vh;
-    background: linear-gradient(139deg, #fff9ec 0%, #fff9ec 40%, rgb(255, 235, 198) calc(54% + 1px), rgb(255, 235, 198) 61%, wheat calc(70% + 1px), wheat 82%, rgb(239, 202, 132) calc(92% + 1px), rgb(239, 202, 132) 100%);
-}
-
-.image-container {
-    display: grid;
-    grid-template-columns: 400px 400px 400px;
-    align-content: center;
-    justify-content: center;
-    column-gap: 50px;
-    @media all and (max-width: 768px){
-        grid-template-columns: 249px 178px;  
-    }
-}
-
-.image-container:hover > :not(:hover) {
-    opacity: .4;
-}
-
-.image-listing {
-    width: 24vw;
-    position: relative;
-    margin-top: 60px;
-    border: 1px solid rgb(230, 230, 230);
-    @media all and (max-width: 768px){
-        width: 30vw;
-    }
-}
-
-.image-listing:hover {
-    box-shadow: 0 0 18px #c69605;
-}
-  
-.image-project {
-    width: 24vw; 
-    transition: .3s; 
-    @media all and (max-width: 768px){
-        width: 30vw;
-    } 
-}
-
-.title-container {
-    height: 8vh; 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
-    line-height: 26px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.title-project {
-    text-transform: uppercase;  
-    font-weight: bold; 
-}
-
-.project {
-    text-align: center;   
-}
-
-
-//Skills section.
-.skills{
-    margin-left: 10%;
-    height: 100vh;
-    background: linear-gradient(125deg, #FFFFFF 0%, #000000 100%), linear-gradient(104deg, #fff4d9 0%, #fff4d9 65%, rgb(255, 228, 177) calc(65% + 1px), rgb(255, 228, 177) 76%, rgb(255, 217, 146) calc(76% + 1px), rgb(255, 217, 146) 88%, rgb(255, 201, 102) calc(88% + 1px), rgb(255, 201, 102) 100%), linear-gradient(28deg, #FFD9E8 0%, #FFD9E8 76%, #b49d87 calc(76% + 1px), #b49d87 84%, #88714a calc(84% + 1px), #88714a 92%, #6a5626 calc(92% + 1px), #6a5626 100%);
-    background-blend-mode: overlay, overlay, normal;
- }
-
-.skills-container{
-    margin-left: 10%;
-    margin-top: 4%;
-    @media all and (max-width: 768px){
-        margin-top: 12%;
-        margin-left: 12%;
-    }
-}
-
-.skills-contain{
-    display: flex;
-    flex-direction: column;
-}
-
-.professional-skills{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
-    font-weight: bolder;
-    font-size: 24px;
-}
-
-.name-skills{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
-    margin-top: 15px;
-}
-
-.personal-skills{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  
-    font-weight: bolder;
-    font-size: 24px;
-    margin-top: 80px;
-}
-
-.line-skills{
-    width: 40vw;
-    height: 1.5vh;
-    border-radius: 100px;
-    border: 2px solid wheat;
-    margin-top: 8px;
 }
 
 .line-skills::-webkit-progress-value{
@@ -797,16 +610,3 @@ header{
     background-color: white;
 }
 
-/*
-
-//PHONE MODE
-@media all and (max-width: 768px){
-    
-}
-
-
-
-//LAPTOP MODE
-@media all and (max-width:1280px){
-
-}*/
