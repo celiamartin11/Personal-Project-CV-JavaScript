@@ -29,18 +29,15 @@ main {
 }
 
 .small-container{
-    width: 18vw;
-    height: 11vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    text-align: left;
+    margin-top: 2%;
     @media all and (min-width: 768px){
-        width: 14vw;
-        height: 15vh;
+        margin-top: 10%;
+        margin-left: 16%;
     }
     @media all and (min-width: 1280px){
-        width: 8vw;
+        margin-left: 28%;
     }
 }
 
@@ -51,11 +48,60 @@ main {
     }
 }
 
-/*.small-name{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 12px;
-    margin-top: 10px;
-}*/
+.menu-container{
+    @media all and (min-width: 768px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: black;
+        text-decoration: none;
+        width: 10vw;
+        font-family: Verdana, Geneva, Tahoma sans-serif;    
+        font-size: 14px;
+    }
+    @media all and (min-width: 1280px){
+        width: 7.5vw;
+    }
+}
+
+.option{
+    @media all and (min-width: 768px){
+       padding: 15px;
+       width: 7vw;
+    }
+}
+
+.option:hover{
+    @media all and (min-width: 768px){
+       background-color: wheat;
+       padding: 15px;
+       width: 7vw;
+    }
+}
+
+.links-container{
+    @media all and (min-width: 768px){
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        height: 45vh;
+    }
+    @media all and (min-width: 1280px){
+        height: 60vh;
+    }
+}
+
+.contact{
+    @media all and (min-width: 768px){
+        width: 30px;
+        margin-top: 40%;  
+    }
+    @media all and (min-width: 1280px){
+        width: 30px;
+        margin-top: 40%;  
+    }
+}
 
 .profile-container{
     background: linear-gradient(132deg, #fff9ec 0%, #fff9ec 50%, rgb(255, 235, 198) calc(80% + 1px), rgb(255, 235, 198) 80%, wheat calc(80% + 1px), wheat 90%, rgb(239, 202, 132) calc(90% + 1px), rgb(239, 202, 132) 100%);
@@ -181,7 +227,6 @@ main {
     }
     @media all and (min-width: 1280px){
         height: 100vh;
-        display: f;
     }
 }
 
@@ -205,6 +250,24 @@ main {
         font-size: 28px;
         width: 20vw;
         height: 6vh;
+    }
+}
+
+.education-contain{
+    @media all and (min-width: 768px){
+        
+    }
+    @media all and (min-width: 1280px){
+        display: flex;
+    }
+}
+
+.studies-contain{
+    @media all and (min-width: 768px){
+        
+    }
+    @media all and (min-width: 1280px){
+        width: 50vw;
     }
 }
 
@@ -236,7 +299,7 @@ main {
         grid-template-columns: 30vw 7vw 65vw;
     }
     @media all and (min-width: 1280px){
-        grid-template-columns: 14vw 3vw 60vw;
+        grid-template-columns: 14vw 3vw 30vw;
         margin-top: 2%;
     }
 }
@@ -325,7 +388,7 @@ main {
         height: 7px;
     }
     @media all and (min-width: 1280px){
-        top: 185px;
+        top: 174px;
         left: -4px;
         width: 6px;
         height: 7px;
@@ -374,6 +437,9 @@ main {
 //Course
 .courses{
     margin-top: 40px;
+    @media all and (min-width: 1280px){
+        margin-top: -4.8%;
+    }
 }
 
 .course-container{
