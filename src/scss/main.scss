@@ -32,6 +32,7 @@ main {
     text-align: center;
     text-align: left;
     margin-top: 2%;
+    margin-left: 2%;
     @media all and (min-width: 768px){
         margin-top: 10%;
         margin-left: 16%;
@@ -281,14 +282,13 @@ main {
     }
     @media all and (min-width: 1280px){
         font-size: 24px;
-        margin: 3% 0 0 8.5%;
+        margin: 3% 0 0 7.5%;
     }
 }
 
 .studies{
     display: flex;
     justify-content: center;
-    margin-top: 3%;
 }
 
 .study-item{
@@ -346,6 +346,9 @@ main {
     @media all and (min-width: 768px){
         height: 195%;
     }
+    @media all and (min-width: 1280px){
+        height: 183%;
+    }
 }
 
 .vertical-list{
@@ -378,21 +381,18 @@ main {
     background: #ffcf76;
     content: '';
     position: absolute;
-    top: 158px;
+    top: 154px;
     left: -2.5px;
     width: 4px;
     height: 5px;
     @media all and (min-width: 768px){
-        top: 212px;
+        top: 205px;
         left: -4px;
         width: 6px;
         height: 7px;
     }
     @media all and (min-width: 1280px){
-        top: 174px;
-        left: -4px;
-        width: 6px;
-        height: 7px;
+        top: 168px;
     }
  }
 
@@ -406,8 +406,10 @@ main {
     font-weight: bold;
     width: 70vw;
     line-height: 18px;
+    margin-top: -2%;
     @media all and (min-width: 768px){
         font-size: 18px;
+        margin-top: -1%;
     }
     @media all and (min-width: 1280px){
         font-size: 15px;
@@ -447,10 +449,13 @@ main {
     display: flex;
     margin: 4vw 0 0 12vw;
     overflow-y: scroll;
+    gap: 20vw;
+    height: 30vh;
     @media all and (min-width: 768px){
         margin: -3vw 0 0 23vw;
         width: 23vw;
         height: 69vh;
+        gap: 20vw;
         overflow-y: scroll;
         overflow-x: hidden;
     }
@@ -458,10 +463,11 @@ main {
         display: flex;
         flex-direction: column;
         margin: 2vw 0px 0px 2.5vw;
-        height: 68vh;
-        width: 30vw;
+        height: 65vh;
+        width: 33vw;
         overflow-y: scroll;
         overflow-x: hidden;
+        gap: 2vw;
     }
 }
 
@@ -493,6 +499,8 @@ main {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 12px;
     font-weight: bold;
+    width: 75vw;
+    line-height: 18px;
     @media all and (min-width: 768px){
         font-size: 16px;
         margin-top: 2%;
@@ -510,6 +518,8 @@ main {
     margin-top: 10px;
     text-decoration: none; 
     color: black;
+    padding: 10px;
+    margin-right: 128px;
     @media all and (min-width: 768px){
         font-size: 15px;
         text-align: center;
@@ -539,8 +549,10 @@ main {
     gap: 6vw;
     flex-wrap: wrap;
     justify-content: center;  
+    margin-top: 3%;
     @media all and (min-width: 1280px){
         gap: 3.5vw;
+        margin-top: 0;
     }
 }
 
@@ -579,7 +591,7 @@ main {
 
 .title-container {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 10px;
+    font-size: 9px;
     line-height: 15px;
     display: flex;
     flex-direction: column;
