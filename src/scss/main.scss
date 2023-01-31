@@ -9,9 +9,12 @@ header{
     background-color: white;
     height: 10vh;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
     @media all and (min-width: 768px){
         width: 14vw;
-        height: 150vh;
+        height: 100vh;
         position: fixed;
     }
     @media all and (min-width: 1280px){
@@ -86,10 +89,9 @@ main {
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
-        height: 45vh;
+        margin-bottom: 2vh;
     }
     @media all and (min-width: 1280px){
-        height: 60vh;
     }
 }
 
@@ -107,31 +109,27 @@ main {
 .profile-container{
     background: linear-gradient(132deg, #fff9ec 0%, #fff9ec 50%, rgb(255, 235, 198) calc(80% + 1px), rgb(255, 235, 198) 80%, wheat calc(80% + 1px), wheat 90%, rgb(239, 202, 132) calc(90% + 1px), rgb(239, 202, 132) 100%);
     height: 90vh;
+
     @media all and (min-width: 768px){
         display: flex;
         flex-direction: column;
         align-items: center;
-        // margin-left: 15%;
         height: 100vh;
     }
     @media all and (min-width: 1280px){
         display: flex;
         flex-direction: row;
+        align-items: flex-start;
         height: 100vh;
-        // margin-left: 8%;
     }
 }
 
 .profile-contain{
     text-align: center;
-    @media all and (min-width: 1280px){
-        margin-top: -20%;
-    }
 }
 
 .profile-image{
     width: 25vw;
-    margin-top: 20px;
     @media all and (min-width: 768px){
         width: 40vw;
         height: 35vh;
@@ -151,9 +149,9 @@ main {
         margin-top: 5%;
     }
     @media all and (min-width: 1280px){
-        margin-top: -20vw;
         align-items: flex-start;
         margin-left: 4%;
+        margin-top: 2%;
     }
 }
 
@@ -222,6 +220,7 @@ main {
 //Studies
 .studies-container{
     height: 150vh;
+    padding-top: 2vw;
     background: linear-gradient(39deg, rgb(239, 202, 132) 0%, rgb(239, 202, 132) 8%, wheat calc(8% + 1px), wheat 15%, rgb(255, 235, 198) calc(15% + 1px), rgb(255, 235, 198) 20%, white calc(60% + 1px), white 100%);
     @media all and (min-width: 768px){
         height: 100vh;
@@ -238,7 +237,6 @@ main {
     background-color: wheat;
     width: 32vw;
     padding: 8px;
-    margin-top: 5%;
     display: flex;
     align-items: center;
     justify-content: end;
@@ -541,6 +539,7 @@ main {
 //Project
 .project-container{
     height: 100vh;
+    padding-top: 2vw;
     background: linear-gradient(139deg, #fff9ec 0%, #fff9ec 40%, rgb(255, 235, 198) calc(54% + 1px), rgb(255, 235, 198) 61%, wheat calc(70% + 1px), wheat 82%, rgb(239, 202, 132) calc(92% + 1px), rgb(239, 202, 132) 100%);
 }
 
@@ -617,6 +616,7 @@ main {
 //Skills
 .skills{
     height: 110vh;
+    padding-top: 2vw;
     background: linear-gradient(125deg, #FFFFFF 0%, #000000 100%), linear-gradient(104deg, #fff4d9 0%, #fff4d9 65%, rgb(255, 228, 177) calc(65% + 1px), rgb(255, 228, 177) 76%, rgb(255, 217, 146) calc(76% + 1px), rgb(255, 217, 146) 88%, rgb(255, 201, 102) calc(88% + 1px), rgb(255, 201, 102) 100%), linear-gradient(28deg, #FFD9E8 0%, #FFD9E8 76%, #b49d87 calc(76% + 1px), #b49d87 84%, #88714a calc(84% + 1px), #88714a 92%, #6a5626 calc(92% + 1px), #6a5626 100%);
     background-blend-mode: overlay, overlay, normal;
  }
@@ -695,3 +695,65 @@ main {
     background-color: white;
 }
 
+
+/** 
+ *  carousel styles
+ *
+**/
+.slider-wrapper {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slides-container {
+    height: calc(100vh - 2rem);
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .slide-arrow {
+    position: absolute;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 4rem;
+    background-color: white;
+    border: none;
+    width: 2rem;
+    font-size: 3rem;
+    padding: 0;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 100ms;
+  }
+  
+  .slide-arrow:hover,
+  .slide-arrow:focus {
+    opacity: 1;
+  }
+  
+  #slide-arrow-prev {
+    left: 0;
+    padding-left: 0.25rem;
+    border-radius: 0 2rem 2rem 0;
+  }
+  
+  #slide-arrow-next {
+    right: 0;
+    padding-left: 0.75rem;
+    border-radius: 2rem 0 0 2rem;
+  }
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+    flex: 1 0 100%;
+  }  
+  
