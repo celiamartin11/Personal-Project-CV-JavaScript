@@ -6,16 +6,16 @@ body{
 }
 
 header{
-    background-color: white;
-    height: 10vh;
-    overflow-x: hidden;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content:space-between;
+    width: 100vw;
+    position: fixed;
+    z-index: 5;
     @media all and (min-width: 768px){
         width: 14vw;
-        height: 100vh;
-        position: fixed;
+        background-color: white;
     }
     @media all and (min-width: 1280px){
         width: 8vw;
@@ -24,43 +24,65 @@ header{
 
 main {
     @media all and (min-width: 768px){
-        margin-left: 8vw;
+        margin-left: 14vw;
+        width: 86vw;
     }
     @media all and (min-width: 1280px){
         margin-left: 8vw;
+        width: 91vw;
     }
 }
 
+
+
+.header-show{
+    background-color: white;
+}
+
 .small-container{
-    text-align: center;
-    text-align: left;
     margin-top: 2%;
-    margin-left: 2%;
+    margin-left: 5px;
     @media all and (min-width: 768px){
         margin-top: 10%;
-        margin-left: 16%;
+        margin-left: 26%;
     }
     @media all and (min-width: 1280px){
         margin-left: 28%;
     }
 }
 
+.small-container-show{
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+}
+
 .small-image{
     width: 10vw;
+    @media all and (min-width: 768px){
+        width: 8vw; 
+    }
     @media all and (min-width: 1280px){
         width: 4vw; 
     }
 }
 
 .menu-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma sans-serif;    
+    font-size: 10px;
     @media all and (min-width: 768px){
         display: flex;
         flex-direction: column;
         align-items: center;
         color: black;
         text-decoration: none;
-        width: 10vw;
         font-family: Verdana, Geneva, Tahoma sans-serif;    
+        width: 14vw;
         font-size: 14px;
     }
     @media all and (min-width: 1280px){
@@ -69,21 +91,34 @@ main {
 }
 
 .option{
+    padding: 15px;
+    width: 16vw;
     @media all and (min-width: 768px){
-       padding: 15px;
-       width: 7vw;
+       width: 14vw;
+    }
+    @media all and (min-width: 1280px){
+        width: 7vw;
     }
 }
 
 .option:hover{
+    background-color: wheat;
+    padding: 15px;
+    width: 16vw;
     @media all and (min-width: 768px){
-       background-color: wheat;
-       padding: 15px;
-       width: 7vw;
+       width: 14vw;
+    }
+    @media all and (min-width: 1280px){
+        width: 7vw;
     }
 }
 
 .links-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 2vh;
     @media all and (min-width: 768px){
         display: flex;
         flex-direction: column;
@@ -91,44 +126,45 @@ main {
         align-items: center;
         margin-bottom: 2vh;
     }
-    @media all and (min-width: 1280px){
-    }
 }
 
 .contact{
+    width: 21px;
+    margin-top: 40%;  
     @media all and (min-width: 768px){
-        width: 30px;
-        margin-top: 40%;  
+        width: 30px; 
     }
     @media all and (min-width: 1280px){
         width: 30px;
-        margin-top: 40%;  
     }
 }
 
 .profile-container{
     background: linear-gradient(132deg, #fff9ec 0%, #fff9ec 50%, rgb(255, 235, 198) calc(80% + 1px), rgb(255, 235, 198) 80%, wheat calc(80% + 1px), wheat 90%, rgb(239, 202, 132) calc(90% + 1px), rgb(239, 202, 132) 100%);
-    height: 90vh;
-
+    height: 100vh;
     @media all and (min-width: 768px){
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 100vh;
     }
     @media all and (min-width: 1280px){
-        display: flex;
         flex-direction: row;
         align-items: flex-start;
-        height: 100vh;
     }
 }
 
 .profile-contain{
     text-align: center;
+    @media all and (min-width: 768px){
+        margin-top: 10%;
+    }
+    @media all and (min-width: 1280px){
+        margin-top: 0%;
+    }
 }
 
 .profile-image{
+    margin-top: 8%;
     width: 25vw;
     @media all and (min-width: 768px){
         width: 40vw;
@@ -242,7 +278,7 @@ main {
     justify-content: end;
     @media all and (min-width: 768px){
         font-size: 20px;
-        width: 40vw;
+        width: 24vw;
         height: 3vh;
     }
     @media all and (min-width: 1280px){
@@ -276,7 +312,7 @@ main {
     margin: 25px 0 0 15px;
     @media all and (min-width: 768px){
         font-size: 20px;
-        margin: 3% 0 0 26%;
+        margin: 3% 0 0 12%;
     }
     @media all and (min-width: 1280px){
         font-size: 24px;
@@ -292,10 +328,10 @@ main {
 .study-item{
     width: 90vw;
     display: grid;
-    grid-template-columns: 10vw 15vw 70vw;
+    grid-template-columns: 10vw 15vw 53vw;
     margin-top: 4%;
     @media all and (min-width: 768px){
-        grid-template-columns: 30vw 7vw 65vw;
+        grid-template-columns: 23vw 7vw 53vw;
     }
     @media all and (min-width: 1280px){
         grid-template-columns: 14vw 3vw 30vw;
@@ -402,7 +438,6 @@ main {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 12px;
     font-weight: bold;
-    width: 70vw;
     line-height: 18px;
     margin-top: -2%;
     @media all and (min-width: 768px){
@@ -450,15 +485,12 @@ main {
     gap: 20vw;
     height: 30vh;
     @media all and (min-width: 768px){
-        margin: -3vw 0 0 23vw;
-        width: 23vw;
-        height: 69vh;
-        gap: 20vw;
+        margin: 4vw 0 0 11vw;
+        gap: 38vw;
+        height: 19vh;
         overflow-y: scroll;
-        overflow-x: hidden;
     }
     @media all and (min-width: 1280px){
-        display: flex;
         flex-direction: column;
         margin: 2vw 0px 0px 2.5vw;
         height: 65vh;
@@ -472,12 +504,9 @@ main {
 .course-item{
     display: flex;
     flex-direction: column;
-    @media all and (min-width: 768px){
-        margin: 40px 0 0 8px;
-    }
     @media all and (min-width: 1280px){
         margin: 1vw 0 0 0.5vw;
-        width: 65vw;
+        width: 40vw;
     }
 }
 
@@ -502,6 +531,8 @@ main {
     @media all and (min-width: 768px){
         font-size: 16px;
         margin-top: 2%;
+        width: 40vw;
+        line-height: 24px;
     }
     @media all and (min-width: 1280px){
         font-size: 15px;
@@ -517,11 +548,13 @@ main {
     text-decoration: none; 
     color: black;
     padding: 10px;
-    margin-right: 128px;
+    margin-right: 53%;
     @media all and (min-width: 768px){
         font-size: 15px;
         text-align: center;
-        margin-top: 3%;
+        margin-top: 4%;
+        padding: 10px;
+        margin-right: 56%;
     }
     @media all and (min-width: 1280px){
         font-size: 14px;
@@ -625,7 +658,7 @@ main {
     margin-left: 6%;
     margin-top: 10%;
     @media all and (min-width: 768px){
-        margin-left: 12%;
+        margin-left: 9%;
     }
     @media all and (min-width: 1280px){
         margin-top: 4%;
@@ -662,7 +695,7 @@ main {
 .personal-skills{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bolder;
-    font-size: 15px;
+    font-size: 12px;
     margin-top: 40px;
     @media all and (min-width: 768px){
         font-size: 20px;
@@ -695,11 +728,6 @@ main {
     background-color: white;
 }
 
-
-/** 
- *  carousel styles
- *
-**/
 .slider-wrapper {
     margin: 1rem;
     position: relative;
@@ -757,3 +785,6 @@ main {
     flex: 1 0 100%;
   }  
   
+.close{
+    display: none;
+}
