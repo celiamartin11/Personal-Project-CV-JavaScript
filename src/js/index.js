@@ -10,6 +10,12 @@ const prevButton = document.getElementById('slide-arrow-prev');
 const nextButton = document.getElementById('slide-arrow-next');
 
 
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+  console.log('movil');
+} else {
+  console.log('no movil'); 
+}
+
 smallContainer.addEventListener('click',() => {
   menuContainer.classList.toggle('close');
   linksContainer.classList.toggle('close');
