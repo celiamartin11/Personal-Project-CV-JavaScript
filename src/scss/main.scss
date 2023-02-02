@@ -223,7 +223,7 @@ main {
     text-align: center;
     @media all and (min-width: 768px){
         font-size: 18px;
-        line-height: 22px;
+        line-height: 26px;
         margin-top: 5%;
         width: 60vw;
         text-align: justify; 
@@ -644,6 +644,16 @@ main {
 .title-project {
     text-transform: uppercase; 
     font-weight: bold;
+}
+
+.project {
+    font-size: 3px;
+    @media all and (min-width: 768px){
+        font-size: 8px;
+    }
+    @media all and (min-width: 1280px){
+        font-size: 12px; 
+    }
 }
 
 //Skills
