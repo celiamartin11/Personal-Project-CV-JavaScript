@@ -1,12 +1,15 @@
 @import "./core/variables";
 @import "./core/reset";
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     overflow-x: hidden;
 }
 
 header{
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content:space-between;
@@ -16,6 +19,7 @@ header{
     @media all and (min-width: 768px){
         width: 14vw;
         background-color: white;
+        height: 100vh;
     }
     @media all and (min-width: 1280px){
         width: 8vw;
@@ -37,6 +41,7 @@ main {
 
 .header-show{
     background-color: white;
+    height: 100vh;
 }
 
 .small-container{

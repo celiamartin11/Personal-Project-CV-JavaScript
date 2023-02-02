@@ -10,17 +10,33 @@ const prevButton = document.getElementById('slide-arrow-prev');
 const nextButton = document.getElementById('slide-arrow-next');
 
 
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-  console.log('movil');
-} else {
-  console.log('no movil'); 
+var isMobile = Math.min(window.screen.width, window.screen.height) < 768 || navigator.userAgent.indexOf("Mobi") > -1;
+console.log('isMobile', isMobile);
+
+if(!isMobile) {
+  menuContainer.classList.toggle('close');
+  linksContainer.classList.toggle('close');
 }
 
 smallContainer.addEventListener('click',() => {
+  if(isMobile) {
+    menuClickLogic();
+  } else {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  }
+});
+
+function menuClickLogic() {
   menuContainer.classList.toggle('close');
   linksContainer.classList.toggle('close');
   header.classList.toggle('header-show');
   smallContainer.classList.toggle('small-container-show');
+}
+
+menuContainer.addEventListener('click', () => {
+  if(isMobile) {
+    menuClickLogic();
+  }
 });
 
 
