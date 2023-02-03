@@ -146,7 +146,7 @@ main {
 
 .profile-container{
     background: linear-gradient(132deg, #fff9ec 0%, #fff9ec 50%, rgb(255, 235, 198) calc(80% + 1px), rgb(255, 235, 198) 80%, wheat calc(80% + 1px), wheat 90%, rgb(239, 202, 132) calc(90% + 1px), rgb(239, 202, 132) 100%);
-    height: auto;
+    height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -173,7 +173,7 @@ main {
 }
 
 .profile-image{
-    width: 32vw;
+    width: 30vw;
     @media all and (min-width: 768px){
         width: 40vw;
         height: 35vh;
@@ -263,11 +263,9 @@ main {
 
 //Studies
 .studies-container{
-    height: auto;
     padding-top: 2vw;
     background: linear-gradient(39deg, rgb(239, 202, 132) 0%, rgb(239, 202, 132) 8%, wheat calc(8% + 1px), wheat 15%, rgb(255, 235, 198) calc(15% + 1px), rgb(255, 235, 198) 20%, white calc(60% + 1px), white 100%);
     display: flex;
-    justify-content: center;
     flex-direction: column;
     @media all and (min-width: 768px){
         height: 100vh;
@@ -583,7 +581,7 @@ main {
 
 //Project
 .project-container{
-    height: auto;
+    height: 100vh;
     padding-top: 2vw;
     background: linear-gradient(139deg, #fff9ec 0%, #fff9ec 40%, rgb(255, 235, 198) calc(54% + 1px), rgb(255, 235, 198) 61%, wheat calc(70% + 1px), wheat 82%, rgb(239, 202, 132) calc(92% + 1px), rgb(239, 202, 132) 100%);
     display: flex;
@@ -673,19 +671,14 @@ main {
 
 //Skills
 .skills{
-    height: auto;
     padding-top: 2vw;
     background: linear-gradient(125deg, #FFFFFF 0%, #000000 100%), linear-gradient(104deg, #fff4d9 0%, #fff4d9 65%, rgb(255, 228, 177) calc(65% + 1px), rgb(255, 228, 177) 76%, rgb(255, 217, 146) calc(76% + 1px), rgb(255, 217, 146) 88%, rgb(255, 201, 102) calc(88% + 1px), rgb(255, 201, 102) 100%), linear-gradient(28deg, #FFD9E8 0%, #FFD9E8 76%, #b49d87 calc(76% + 1px), #b49d87 84%, #88714a calc(84% + 1px), #88714a 92%, #6a5626 calc(92% + 1px), #6a5626 100%);
     background-blend-mode: overlay, overlay, normal;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    @media all and (min-width: 1280px){
-        justify-content: flex-start;
-    }
+    height: 100vh;
  }
 
  .skills-container{
+    margin-bottom: 10%;
     margin-left: 6%;
     margin-top: 10%;
     @media all and (min-width: 768px){
