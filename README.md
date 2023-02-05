@@ -2,7 +2,7 @@
 
 Este es mi CV online, donde podrás encontrar una pequeña parte de mí. 
 
-![video_CV](https://user-images.githubusercontent.com/113979188/216830993-e73e04d2-c1e4-4edb-8598-99cff4374d32.gif)
+
 
 ## Sobre mí 👩🏻
 
