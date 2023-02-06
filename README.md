@@ -40,4 +40,4 @@ El menú se presenta en formato vertical, y consta de los diferente apartados qu
 
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/celiamartinh/)
 
-[![gmail](	https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](https://mail.google.com/mail/u/1/#inbox)
+[![gmail](	https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)]<a href="mailto:celiamartinh11@gmail.com" target="_blank"><img class="contact" src="./assets/images/gmail.png" alt="gmail"></a>
