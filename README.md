@@ -32,10 +32,11 @@ En esta sección observamos diferentes habilidades, las cuales están agrupadas 
 
 ## Menú 
 
-El menú se presenta en formato vertical, y consta de los diferente apartados que presenta la página web. (Sobre mí, Educación, Proyectos, Habilidades). Además de una imagen que actúa como logo. Una **letra C**, la cual **en formato móvil es clickable y hace que el menú se despliegue.** Y en la parte inferior encontramos tres aplicaciones conocidas: GitHub, Linkeidn y Gmail, para que las personas que estén interesadas en contactar conmigo tengan fácil su accesibilidad. 
+El menú se presenta en formato vertical, y consta de los diferente apartados que presenta la página web. (Sobre mí, Educación, Proyectos, Habilidades). Además de una imagen que actúa como logo. Una **letra C**, la cual **en formato móvil es clickable y hace que el menú se despliegue.** Y en la parte inferior encontramos tres aplicaciones conocidas: GitHub, Linkeidn y Gmail, para que las personas que estén interesadas en contactar conmigo tengan fácil su accesibilidad.
 
 ## Links 🔗
 
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://celiamartin11.github.io/Personal-Project-CV-JavaScript/)
 
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/celiamartinh/)
+
