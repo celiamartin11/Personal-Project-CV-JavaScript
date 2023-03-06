@@ -146,7 +146,7 @@ main {
 
 .profile-container{
     background: linear-gradient(132deg, #fff9ec 0%, #fff9ec 50%, rgb(255, 235, 198) calc(80% + 1px), rgb(255, 235, 198) 80%, wheat calc(80% + 1px), wheat 90%, rgb(239, 202, 132) calc(90% + 1px), rgb(239, 202, 132) 100%);
-    height: 100vh;
+    height: 135vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -154,6 +154,7 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
+        height: 100vh;
     }
     @media all and (min-width: 1280px){
         flex-direction: row;
@@ -584,7 +585,7 @@ main {
 
 //Project
 .project-container{
-    height: 90vh;
+    height: 99vh;
     padding-top: 8vw;
     background: linear-gradient(139deg, #fff9ec 0%, #fff9ec 40%, rgb(255, 235, 198) calc(54% + 1px), rgb(255, 235, 198) 61%, wheat calc(70% + 1px), wheat 82%, rgb(239, 202, 132) calc(92% + 1px), rgb(239, 202, 132) 100%);
     display: flex;
@@ -655,7 +656,7 @@ main {
 
 .title-container {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 9px;
+    font-size: 7px;
     line-height: 15px;
     display: flex;
     flex-direction: column;
@@ -679,7 +680,7 @@ main {
 }
 
 .project {
-    font-size: 6px;
+    font-size: 4px;
     @media all and (min-width: 768px){
         font-size: 11px;
     }
@@ -693,7 +694,7 @@ main {
     padding-top: 8vw;
     background: linear-gradient(125deg, #FFFFFF 0%, #000000 100%), linear-gradient(104deg, #fff4d9 0%, #fff4d9 65%, rgb(255, 228, 177) calc(65% + 1px), rgb(255, 228, 177) 76%, rgb(255, 217, 146) calc(76% + 1px), rgb(255, 217, 146) 88%, rgb(255, 201, 102) calc(88% + 1px), rgb(255, 201, 102) 100%), linear-gradient(28deg, #FFD9E8 0%, #FFD9E8 76%, #b49d87 calc(76% + 1px), #b49d87 84%, #88714a calc(84% + 1px), #88714a 92%, #6a5626 calc(92% + 1px), #6a5626 100%);
     background-blend-mode: overlay, overlay, normal;
-    height: 112vh;
+    height: 135vh;
     @media all and (min-width: 768px){
         padding-top: 4vw;
         height: 100vh;
